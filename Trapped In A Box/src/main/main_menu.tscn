@@ -56,5 +56,18 @@ theme_override_font_sizes/font_size = 30
 text = "Quit"
 
 [node name="OptionPanel" parent="." instance=ExtResource("2_7vrkn")]
-layout_mode = 0
-anchors_preset = 0
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 300.0
+offset_top = 0.0
+offset_right = -287.0
+offset_bottom = 0.0
+
+[connection signal="button_up" from="VBoxContainer/StartButton" to="." method="start"]
+[connection signal="button_up" from="VBoxContainer/OptionButton" to="." method="option"]
+[connection signal="button_up" from="VBoxContainer/QuitButton" to="." method="quit"]
