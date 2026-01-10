@@ -1,10 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://di0rc1hmmqrnf"]
+[gd_scene load_steps=15 format=3 uid="uid://c2rrnq0q25mrx"]
 
-[ext_resource type="Script" uid="uid://ci2fpskvpaalx" path="res://blok.gd" id="1_r6vdu"]
-[ext_resource type="Texture2D" uid="uid://dyqnjmaeeedm7" path="res://blocks/Untitled158_20260106221136.png" id="2_21xmu"]
-[ext_resource type="Texture2D" uid="uid://cuore6j01lfiq" path="res://blocks/Untitled158_20260106221112.png" id="3_8i3m3"]
-[ext_resource type="Texture2D" uid="uid://dkvqe8j6qfbto" path="res://blocks/Untitled158_20260106221128.png" id="4_rmy57"]
-[ext_resource type="Texture2D" uid="uid://cjnr6f4c42vqt" path="res://blocks/Untitled158_20260106221116.png" id="5_qulpo"]
+[ext_resource type="Script" uid="uid://ci2fpskvpaalx" path="res://Scripts/blok.gd" id="1_r6vdu"]
+[ext_resource type="Texture2D" uid="uid://dyqnjmaeeedm7" path="res://Assets/blocks/Untitled158_20260106221136.png" id="2_21xmu"]
+[ext_resource type="Texture2D" uid="uid://cuore6j01lfiq" path="res://Assets/blocks/Untitled158_20260106221112.png" id="3_8i3m3"]
+[ext_resource type="Texture2D" uid="uid://dkvqe8j6qfbto" path="res://Assets/blocks/Untitled158_20260106221128.png" id="4_rmy57"]
+[ext_resource type="Texture2D" uid="uid://cjnr6f4c42vqt" path="res://Assets/blocks/Untitled158_20260106221116.png" id="5_qulpo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jifot"]
 size = Vector2(48, 370.5)
