@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var step := 16
+@export var step := 28
 @export var speed: float = 300.0
 @export_enum("Horizontal", "Vertical") var move_axis := "Horizontal"
 @export var object_color: Color = Color(1, 1, 1)

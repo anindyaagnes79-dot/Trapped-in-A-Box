@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dfcaa4ftr7e25"]
+[gd_scene load_steps=2 format=3 uid="uid://2s0tasgk6j7h"]
 
-[ext_resource type="Script" path="res://level_select.gd" id="1_il3u1"]
+[ext_resource type="Script" uid="uid://yelo4cpjarqy" path="res://Scripts/level_select.gd" id="1_1fiak"]
 
 [node name="LevelSelect" type="Control"]
 layout_mode = 3
@@ -9,7 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_il3u1")
+script = ExtResource("1_1fiak")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -74,3 +74,4 @@ text = "2
 "
 
 [connection signal="button_up" from="BackButton" to="." method="back"]
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
