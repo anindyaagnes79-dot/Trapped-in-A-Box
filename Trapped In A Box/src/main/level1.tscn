@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgsjc5h1utia3"]
+
+[ext_resource type="Texture2D" uid="uid://ceishffintt10" path="res://blocks/Untitled158_20260106220544.png" id="1_jwv3a"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 652.0
+color = Color(0.7553583, 0.68557405, 0.35237345, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(754, 245)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("1_jwv3a")
