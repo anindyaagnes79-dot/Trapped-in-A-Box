@@ -12,3 +12,9 @@ func _process(delta: float) -> void:
 
 
 func back() -> void: get_tree().change_scene_to_file("res://main_menu.tscn")
+
+
+func _on_level_button_up(level_number: int) -> void:
+	global.level_number = level_number
+	
+	pass # Replace with function body.
