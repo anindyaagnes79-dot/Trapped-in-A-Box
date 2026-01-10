@@ -3,6 +3,9 @@ extends CharacterBody2D
 @export var step := 16
 @export var speed: float = 300.0
 @export_enum("Horizontal", "Vertical") var move_axis := "Horizontal"
+@export var object_color: Color = Color(1, 1, 1)
+
+
 
 static var active_node: CharacterBody2D = null
 
@@ -13,6 +16,7 @@ var is_active := false
 func _ready():
 	target_pos = global_position
 	input_pickable = true
+	modulate = object_color
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:

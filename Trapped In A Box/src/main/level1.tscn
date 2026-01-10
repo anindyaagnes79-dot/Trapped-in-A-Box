@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgsjc5h1utia3"]
+[gd_scene load_steps=5 format=3 uid="uid://bgsjc5h1utia3"]
 
 [ext_resource type="Script" uid="uid://ci2fpskvpaalx" path="res://blok.gd" id="1_dopym"]
 [ext_resource type="Texture2D" uid="uid://cuore6j01lfiq" path="res://blocks/Untitled158_20260106221112.png" id="3_ootpb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v38iq"]
 size = Vector2(56, 167)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dopym"]
+size = Vector2(55, 167.25)
 
 [node name="Node2D" type="Node2D"]
 
@@ -35,3 +38,38 @@ texture = ExtResource("3_ootpb")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tes"]
 position = Vector2(27, 13)
 shape = SubResource("RectangleShape2D_v38iq")
+
+[node name="tes2" type="CharacterBody2D" parent="."]
+position = Vector2(598, 206)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_dopym")
+step = 32
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="tes2"]
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("3_ootpb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tes2"]
+position = Vector2(24, 12)
+shape = SubResource("RectangleShape2D_dopym")
+
+[node name="tes3" type="CharacterBody2D" parent="."]
+position = Vector2(750, 205)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_dopym")
+move_axis = "Vertical"
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="tes3"]
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("3_ootpb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tes3"]
+position = Vector2(24.5, 12.375)
+shape = SubResource("RectangleShape2D_dopym")
