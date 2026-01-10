@@ -35,22 +35,6 @@ size = Vector2(161, 54.7861)
 
 [node name="Leveltes" type="Node2D"]
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 179.41214
-offset_top = 326.03787
-offset_right = 219.41214
-offset_bottom = 366.03787
-
-[node name="ColorRect" type="ColorRect" parent="Control"]
-layout_mode = 0
-offset_left = -0.4121399
-offset_top = -259.03787
-offset_right = 1153.5879
-offset_bottom = 392.96213
-color = Color(0.7553583, 0.68557405, 0.35237345, 1)
-
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(268, 101)
 
@@ -173,7 +157,7 @@ scale = Vector2(13.75, 13.9375)
 texture = ExtResource("2_gexi1")
 
 [node name="black7" type="CharacterBody2D" parent="grid"]
-position = Vector2(396, 133)
+position = Vector2(397, 131)
 scale = Vector2(1, 1.0369166)
 slide_on_ceiling = false
 safe_margin = 1.0
@@ -647,6 +631,22 @@ object_color = Color(0.8976032, 0, 0.05446416, 1)
 
 [node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black36"]
 modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_gexi1")
+
+[node name="black37" type="CharacterBody2D" parent="grid"]
+position = Vector2(688, 257)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_gexi1")
+step = 32
+object_color = Color(0.938547, 0.7513044, 0.42891955, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black37"]
+modulate = Color(0.30588236, 0.84313726, 0.9490196, 1)
 texture_filter = 1
 position = Vector2(-3, 40)
 scale = Vector2(13.75, 13.9375)
