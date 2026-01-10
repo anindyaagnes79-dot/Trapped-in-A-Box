@@ -18,3 +18,6 @@
     2. Connect the buttons to a function (function WIP)
     3. Make a global script
     4. Save choosen level to global script
+- refactor: save option tres for future use
+    1. Add tres file templating from option
+    2. Add basic winning panel
