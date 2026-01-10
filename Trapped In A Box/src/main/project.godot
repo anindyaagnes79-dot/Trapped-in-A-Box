@@ -15,6 +15,10 @@ run/main_scene="uid://cm0hldn3765e6"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://Assets/icon.svg"
 
+[autoload]
+
+LevelCore="*res://LevelCore.gd"
+
 [dotnet]
 
 project/assembly_name="Trapped in a Box"
