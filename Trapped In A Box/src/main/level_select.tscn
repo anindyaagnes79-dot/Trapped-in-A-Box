@@ -3,23 +3,15 @@
 [ext_resource type="Script" uid="uid://yelo4cpjarqy" path="res://level_select.gd" id="1_il3u1"]
 [ext_resource type="Texture2D" uid="uid://0ajiucihixtp" path="res://blocks/lock.png" id="2_vomi7"]
 
-[node name="LevelSelect" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="LevelSelect" type="Node2D"]
 script = ExtResource("1_il3u1")
 
 [node name="background" type="ColorRect" parent="."]
-layout_mode = 0
 offset_right = 1154.0
 offset_bottom = 652.0
 color = Color(0.7553583, 0.68557405, 0.35237345, 1)
 
 [node name="BackButton" type="Button" parent="."]
-layout_mode = 1
 offset_left = 15.0
 offset_top = 15.0
 offset_right = 140.0
@@ -30,7 +22,6 @@ text = "Back"
 
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
-layout_mode = 0
 offset_left = 426.0
 offset_top = 119.0
 offset_right = 541.0
@@ -40,7 +31,6 @@ text = "Level Selection"
 
 [node name="Button1" type="Button" parent="."]
 unique_name_in_owner = true
-layout_mode = 0
 offset_left = 97.0
 offset_top = 274.0
 offset_right = 140.0
@@ -50,7 +40,6 @@ text = "1"
 
 [node name="Button2" type="Button" parent="."]
 unique_name_in_owner = true
-layout_mode = 0
 offset_left = 351.00003
 offset_top = 276.0
 offset_right = 394.00003
@@ -61,7 +50,6 @@ text = "2
 
 [node name="Button3" type="Button" parent="."]
 unique_name_in_owner = true
-layout_mode = 0
 offset_left = 619.00006
 offset_top = 278.0
 offset_right = 662.00006
@@ -71,7 +59,6 @@ text = "3"
 
 [node name="Button4" type="Button" parent="."]
 unique_name_in_owner = true
-layout_mode = 0
 offset_left = 881.0001
 offset_top = 276.0
 offset_right = 924.0001
@@ -79,19 +66,25 @@ offset_bottom = 320.0
 scale = Vector2(4.2, 4.2)
 text = "4"
 
-[node name="Lock" type="Sprite2D" parent="."]
-position = Vector2(438, 354)
+[node name="Lock1" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(440.00003, 354)
 scale = Vector2(0.6461111, 0.6141666)
 texture = ExtResource("2_vomi7")
 
 [node name="Lock2" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(975, 355.00003)
 scale = Vector2(0.6461111, 0.6141666)
 texture = ExtResource("2_vomi7")
 
 [node name="Lock3" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(710.00006, 356.00003)
 scale = Vector2(0.6461111, 0.6141666)
 texture = ExtResource("2_vomi7")
 
-[connection signal="button_up" from="BackButton" to="." method="back"]
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
