@@ -1,7 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://2s0tasgk6j7h"]
+[gd_scene load_steps=2 format=3 uid="uid://dfcaa4ftr7e25"]
 
 [ext_resource type="Script" uid="uid://yelo4cpjarqy" path="res://level_select.gd" id="1_il3u1"]
 [ext_resource type="Texture2D" uid="uid://0ajiucihixtp" path="res://blocks/lock.png" id="2_vomi7"]
+[ext_resource type="Script" path="res://level_select.gd" id="1_il3u1"]
 
 [node name="LevelSelect" type="Node2D"]
 script = ExtResource("1_il3u1")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvtl8eocrhfi5"]
+
+[ext_resource type="Script" uid="uid://ci2fpskvpaalx" path="res://Scripts/blok.gd" id="1_sxich"]
+[ext_resource type="Texture2D" uid="uid://dkvqe8j6qfbto" path="res://Assets/blocks/Untitled158_20260106221128.png" id="2_ei7t8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4di6r"]
+size = Vector2(55, 110.09094)
+
+[node name="Horizontal - 2x1" type="Node2D"]
+
+[node name="Horizontal Script" type="CharacterBody2D" parent="."]
+position = Vector2(598, 206)
+rotation = -1.5707964
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_sxich")
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="Horizontal Script"]
+texture_filter = 1
+position = Vector2(-3, 40)
+rotation = 1.5707964
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_ei7t8")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horizontal Script"]
+position = Vector2(24, 40.57953)
+shape = SubResource("RectangleShape2D_4di6r")

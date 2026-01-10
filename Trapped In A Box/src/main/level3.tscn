@@ -1,0 +1,892 @@
+[gd_scene load_steps=14 format=3 uid="uid://cjllg4jbw0vq6"]
+
+[ext_resource type="Script" uid="uid://ci2fpskvpaalx" path="res://blok.gd" id="1_an40m"]
+[ext_resource type="Texture2D" uid="uid://dyqnjmaeeedm7" path="res://blocks/Untitled158_20260106221136.png" id="2_mu84n"]
+[ext_resource type="Texture2D" uid="uid://cuore6j01lfiq" path="res://blocks/Untitled158_20260106221112.png" id="3_bmsap"]
+[ext_resource type="Texture2D" uid="uid://dkvqe8j6qfbto" path="res://blocks/Untitled158_20260106221128.png" id="4_rqrji"]
+[ext_resource type="Texture2D" uid="uid://cjnr6f4c42vqt" path="res://blocks/Untitled158_20260106221116.png" id="5_8x87a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ci4mn"]
+size = Vector2(48, 370.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sotx7"]
+size = Vector2(224.5, 31.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ymh28"]
+size = Vector2(392, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7oc4e"]
+size = Vector2(55, 166.33994)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_siwpi"]
+size = Vector2(56, 108.643654)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0m7xm"]
+size = Vector2(161, 54.7861)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qoi87"]
+size = Vector2(55, 166.33994)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i6w5t"]
+size = Vector2(109, 55.714775)
+
+[node name="Level3" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(268, 101)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-14, 199.75)
+shape = SubResource("RectangleShape2D_ci4mn")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(122.75, 401.75)
+shape = SubResource("RectangleShape2D_sotx7")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(158, 2.5)
+shape = SubResource("RectangleShape2D_ymh28")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(386, 199.75)
+shape = SubResource("RectangleShape2D_ci4mn")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(418, 403)
+shape = SubResource("RectangleShape2D_sotx7")
+
+[node name="grid" type="Node2D" parent="."]
+
+[node name="black" type="CharacterBody2D" parent="grid"]
+position = Vector2(337, 133.00002)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black2" type="CharacterBody2D" parent="grid"]
+position = Vector2(337, 195)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black2"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black3" type="CharacterBody2D" parent="grid"]
+position = Vector2(337, 257)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black3"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black4" type="CharacterBody2D" parent="grid"]
+position = Vector2(337, 319)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black4"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black5" type="CharacterBody2D" parent="grid"]
+position = Vector2(337, 381)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black5"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black6" type="CharacterBody2D" parent="grid"]
+position = Vector2(337, 443)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black6"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black7" type="CharacterBody2D" parent="grid"]
+position = Vector2(397, 131)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black7"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black8" type="CharacterBody2D" parent="grid"]
+position = Vector2(396, 194.99998)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black8"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black9" type="CharacterBody2D" parent="grid"]
+position = Vector2(396, 257)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black9"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black10" type="CharacterBody2D" parent="grid"]
+position = Vector2(396, 319)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black10"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black11" type="CharacterBody2D" parent="grid"]
+position = Vector2(396, 381)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black11"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black12" type="CharacterBody2D" parent="grid"]
+position = Vector2(396, 443)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black12"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black13" type="CharacterBody2D" parent="grid"]
+position = Vector2(454, 133)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black13"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black14" type="CharacterBody2D" parent="grid"]
+position = Vector2(454, 194.99998)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black14"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black15" type="CharacterBody2D" parent="grid"]
+position = Vector2(454, 257)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black15"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black16" type="CharacterBody2D" parent="grid"]
+position = Vector2(454, 319)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black16"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black17" type="CharacterBody2D" parent="grid"]
+position = Vector2(454, 381)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black17"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black18" type="CharacterBody2D" parent="grid"]
+position = Vector2(454, 443)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black18"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black19" type="CharacterBody2D" parent="grid"]
+position = Vector2(512, 133)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black19"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black20" type="CharacterBody2D" parent="grid"]
+position = Vector2(512, 194.99998)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black20"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black21" type="CharacterBody2D" parent="grid"]
+position = Vector2(512, 257)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black21"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black22" type="CharacterBody2D" parent="grid"]
+position = Vector2(512, 319)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black22"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black23" type="CharacterBody2D" parent="grid"]
+position = Vector2(512, 381)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black23"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black24" type="CharacterBody2D" parent="grid"]
+position = Vector2(512, 443)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black24"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black25" type="CharacterBody2D" parent="grid"]
+position = Vector2(570, 133)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black25"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black26" type="CharacterBody2D" parent="grid"]
+position = Vector2(570, 194.99998)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black26"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black27" type="CharacterBody2D" parent="grid"]
+position = Vector2(570, 257)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black27"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black28" type="CharacterBody2D" parent="grid"]
+position = Vector2(570, 319)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black28"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black29" type="CharacterBody2D" parent="grid"]
+position = Vector2(570, 381)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black29"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black30" type="CharacterBody2D" parent="grid"]
+position = Vector2(570, 443)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black30"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black31" type="CharacterBody2D" parent="grid"]
+position = Vector2(629, 133)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black31"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black32" type="CharacterBody2D" parent="grid"]
+position = Vector2(629, 194.99998)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black32"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black33" type="CharacterBody2D" parent="grid"]
+position = Vector2(629, 257)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black33"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black34" type="CharacterBody2D" parent="grid"]
+position = Vector2(629, 319)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black34"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black35" type="CharacterBody2D" parent="grid"]
+position = Vector2(629, 381)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black35"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black36" type="CharacterBody2D" parent="grid"]
+position = Vector2(629, 443)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black36"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="black37" type="CharacterBody2D" parent="grid"]
+position = Vector2(569, 503)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 32
+object_color = Color(0.938547, 0.7513044, 0.42891955, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black37"]
+modulate = Color(0.30588236, 0.84313726, 0.9490196, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_mu84n")
+
+[node name="green2" type="CharacterBody2D" parent="."]
+position = Vector2(341, 197)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 62
+move_axis = "Vertical"
+object_color = Color(0, 0.9019608, 0.13333334, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="green2"]
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("3_bmsap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="green2"]
+position = Vector2(24, 11.544998)
+shape = SubResource("RectangleShape2D_7oc4e")
+
+[node name="green3" type="CharacterBody2D" parent="."]
+position = Vector2(456, 320)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 62
+move_axis = "Vertical"
+object_color = Color(0, 0.9019608, 0.13333334, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="green3"]
+texture_filter = 1
+position = Vector2(-3, 40)
+rotation = 1.5707964
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("4_rqrji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="green3"]
+position = Vector2(25, 40.393173)
+shape = SubResource("RectangleShape2D_siwpi")
+
+[node name="yellow2" type="CharacterBody2D" parent="."]
+position = Vector2(401, 197)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 58
+object_color = Color(1, 0.8901961, 0.050980393, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="yellow2"]
+texture_filter = 1
+position = Vector2(49.999996, 39.000267)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("5_8x87a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="yellow2"]
+modulate = Color(0.67, 0.080400005, 0.080400005, 1)
+position = Vector2(77.5, 11.6072235)
+shape = SubResource("RectangleShape2D_0m7xm")
+
+[node name="red" type="CharacterBody2D" parent="."]
+position = Vector2(515, 255)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 62
+move_axis = "Vertical"
+object_color = Color(0.8980392, 0, 0.05490196, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="red"]
+texture_filter = 1
+position = Vector2(-3, 40)
+rotation = 1.5707964
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("4_rqrji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="red"]
+position = Vector2(25, 40.393173)
+shape = SubResource("RectangleShape2D_siwpi")
+
+[node name="green4" type="CharacterBody2D" parent="."]
+position = Vector2(575, 256)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 62
+move_axis = "Vertical"
+object_color = Color(0, 0.9019608, 0.13333334, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="green4"]
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("3_bmsap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="green4"]
+position = Vector2(24, 11.544998)
+shape = SubResource("RectangleShape2D_7oc4e")
+
+[node name="green6" type="CharacterBody2D" parent="."]
+position = Vector2(283, 284)
+scale = Vector2(1, 1.4369142)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 62
+move_axis = "Vertical"
+object_color = Color(0, 0.9019608, 0.13333334, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="green6"]
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("3_bmsap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="green6"]
+position = Vector2(24, 11.544998)
+shape = SubResource("RectangleShape2D_qoi87")
+
+[node name="yellow" type="CharacterBody2D" parent="."]
+position = Vector2(462, 442)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 58
+object_color = Color(1, 0.8901961, 0.050980393, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="yellow"]
+texture_filter = 1
+position = Vector2(49.999996, 39.000267)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("4_rqrji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="yellow"]
+modulate = Color(0.67, 0.080400005, 0.080400005, 1)
+position = Vector2(49.5, 11.143021)
+shape = SubResource("RectangleShape2D_i6w5t")
+
+[node name="yellow3" type="CharacterBody2D" parent="."]
+position = Vector2(288, 442.00003)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 58
+object_color = Color(1, 0.8901961, 0.050980393, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="yellow3"]
+texture_filter = 1
+position = Vector2(49.999996, 39.000267)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("4_rqrji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="yellow3"]
+modulate = Color(0.67, 0.080400005, 0.080400005, 1)
+position = Vector2(49.5, 11.143021)
+shape = SubResource("RectangleShape2D_i6w5t")
+
+[node name="green7" type="CharacterBody2D" parent="."]
+position = Vector2(398, 347)
+scale = Vector2(1, 1.4369142)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 62
+move_axis = "Vertical"
+object_color = Color(0, 0.9019608, 0.13333334, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="green7"]
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("3_bmsap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="green7"]
+position = Vector2(24, 11.544998)
+shape = SubResource("RectangleShape2D_qoi87")
+
+[node name="yellow4" type="CharacterBody2D" parent="."]
+position = Vector2(402, 136)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 58
+object_color = Color(1, 0.8901961, 0.050980393, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="yellow4"]
+texture_filter = 1
+position = Vector2(49.999996, 39.000267)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("4_rqrji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="yellow4"]
+modulate = Color(0.67, 0.080400005, 0.080400005, 1)
+position = Vector2(49.5, 11.143021)
+shape = SubResource("RectangleShape2D_i6w5t")
+
+[node name="yellow5" type="CharacterBody2D" parent="."]
+position = Vector2(518, 136)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 58
+object_color = Color(1, 0.8901961, 0.050980393, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="yellow5"]
+texture_filter = 1
+position = Vector2(49.999996, 39.000267)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("4_rqrji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="yellow5"]
+modulate = Color(0.67, 0.080400005, 0.080400005, 1)
+position = Vector2(49.5, 11.143021)
+shape = SubResource("RectangleShape2D_i6w5t")
+
+[node name="yellow6" type="CharacterBody2D" parent="."]
+position = Vector2(518, 380)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_an40m")
+step = 58
+object_color = Color(1, 0.8901961, 0.050980393, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="yellow6"]
+texture_filter = 1
+position = Vector2(49.999996, 39.000267)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("4_rqrji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="yellow6"]
+modulate = Color(0.67, 0.080400005, 0.080400005, 1)
+position = Vector2(49.5, 11.143021)
+shape = SubResource("RectangleShape2D_i6w5t")

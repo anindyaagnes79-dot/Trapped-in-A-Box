@@ -10,6 +10,8 @@ func back() -> void: get_tree().change_scene_to_file("res://main_menu.tscn")
 @onready var lock2: Sprite2D = $"%Lock2"
 @onready var lock3: Sprite2D = $"%Lock3"
 
+func back() -> void: get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
+
 func _ready() -> void:
 	button.grab_focus()
 	if LevelCore.lv1completed == true:
