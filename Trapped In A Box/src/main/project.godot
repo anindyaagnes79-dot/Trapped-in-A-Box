@@ -15,6 +15,10 @@ run/main_scene="uid://cm0hldn3765e6"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[dotnet]
+
+project/assembly_name="Trapped in a Box"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
