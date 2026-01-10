@@ -1,16 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2mvma04881jf"]
+[gd_scene load_steps=3 format=3 uid="uid://bv8ltqo3huxbw"]
 
-[ext_resource type="Script" uid="uid://bxpfjoqwu3yh6" path="res://option_panel.gd" id="1_44rrn"]
+[ext_resource type="StyleBox" path="res://option_panel.tres" id="1_703hu"]
+[ext_resource type="Script" uid="uid://bxpfjoqwu3yh6" path="res://option_panel.gd" id="2_pguxx"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o35ae"]
-bg_color = Color(0.2, 0.2, 0.2, 0.90588236)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-corner_detail = 20
-
-[node name="OptionPanel" type="Panel"]
+[node name="CreditPanel" type="Panel"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -22,8 +15,8 @@ offset_right = 250.0
 offset_bottom = 275.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_o35ae")
-script = ExtResource("1_44rrn")
+theme_override_styles/panel = ExtResource("1_703hu")
+script = ExtResource("2_pguxx")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -40,7 +33,7 @@ layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 1.25
 theme_override_font_sizes/font_size = 40
-text = "Option"
+text = "Credits"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -50,25 +43,16 @@ size_flags_vertical = 3
 
 [node name="Label" type="Label" parent="VBoxContainer/VSplitContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "Audio"
+theme_override_font_sizes/font_size = 24
+text = "Programmer"
 
-[node name="HSlider" type="HSlider" parent="VBoxContainer/VSplitContainer"]
+[node name="Label2" type="Label" parent="VBoxContainer/VSplitContainer"]
 layout_mode = 2
-size_flags_vertical = 2
-
-[node name="VSplitContainer2" type="VBoxContainer" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Label" type="Label" parent="VBoxContainer/VSplitContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "Brightness"
-
-[node name="HSlider" type="HSlider" parent="VBoxContainer/VSplitContainer2"]
-layout_mode = 2
-size_flags_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Agnes-006-throughwind
+Fauzan-077-bonusix25
+Nabil-272-ibo06698
+Daffa-055-sacrit_12"
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 1

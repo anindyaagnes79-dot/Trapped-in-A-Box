@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://di0rc1hmmqrnf"]
+[gd_scene load_steps=14 format=3 uid="uid://bdt64e0dbins"]
 
 [ext_resource type="Script" uid="uid://ci2fpskvpaalx" path="res://blok.gd" id="1_r6vdu"]
 [ext_resource type="Texture2D" uid="uid://dyqnjmaeeedm7" path="res://blocks/Untitled158_20260106221136.png" id="2_21xmu"]
@@ -6,57 +6,50 @@
 [ext_resource type="Texture2D" uid="uid://dkvqe8j6qfbto" path="res://blocks/Untitled158_20260106221128.png" id="4_rmy57"]
 [ext_resource type="Texture2D" uid="uid://cjnr6f4c42vqt" path="res://blocks/Untitled158_20260106221116.png" id="5_qulpo"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jifot"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7pivl"]
 size = Vector2(48, 370.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3opl0"]
-size = Vector2(348.5, 31.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gexi1"]
+size = Vector2(409.5, 62)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dc5vx"]
-size = Vector2(68, 215.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_px8bs"]
+size = Vector2(68, 301)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8oj7"]
-size = Vector2(392, 25)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y60x0"]
+size = Vector2(542, 25)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mw4xc"]
-size = Vector2(72, 152.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_r8rrl"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hr07a"]
 size = Vector2(55, 166.33994)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwvnx"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m5boc"]
 size = Vector2(109, 55.714775)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ou0f"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3gnjk"]
 size = Vector2(56, 108.643654)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4k5bj"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xjpae"]
 size = Vector2(161, 54.7861)
 
-[node name="Level2" type="Node2D"]
+[node name="Leveltes" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(268, 101)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(-14, 199.75)
-shape = SubResource("RectangleShape2D_jifot")
+shape = SubResource("RectangleShape2D_7pivl")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(184.75, 401.75)
-shape = SubResource("RectangleShape2D_3opl0")
+position = Vector2(215.25, 355)
+shape = SubResource("RectangleShape2D_gexi1")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(394, 310.75)
-shape = SubResource("RectangleShape2D_dc5vx")
+position = Vector2(457, 233.5)
+shape = SubResource("RectangleShape2D_px8bs")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(158, 2.5)
-shape = SubResource("RectangleShape2D_s8oj7")
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(396, 62.75)
-shape = SubResource("RectangleShape2D_mw4xc")
+position = Vector2(233, 3)
+shape = SubResource("RectangleShape2D_y60x0")
 
 [node name="grid" type="Node2D" parent="."]
 
@@ -140,24 +133,8 @@ position = Vector2(-3, 40)
 scale = Vector2(13.75, 13.9375)
 texture = ExtResource("2_21xmu")
 
-[node name="black6" type="CharacterBody2D" parent="grid"]
-position = Vector2(337, 443)
-scale = Vector2(1, 1.0369166)
-slide_on_ceiling = false
-safe_margin = 1.0
-script = ExtResource("1_r6vdu")
-step = 32
-object_color = Color(0.8976032, 0, 0.05446416, 1)
-
-[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black6"]
-modulate = Color(0.22, 0.0704, 0.0704, 1)
-texture_filter = 1
-position = Vector2(-3, 40)
-scale = Vector2(13.75, 13.9375)
-texture = ExtResource("2_21xmu")
-
 [node name="black7" type="CharacterBody2D" parent="grid"]
-position = Vector2(397, 131)
+position = Vector2(396, 133)
 scale = Vector2(1, 1.0369166)
 slide_on_ceiling = false
 safe_margin = 1.0
@@ -230,22 +207,6 @@ step = 32
 object_color = Color(0.8976032, 0, 0.05446416, 1)
 
 [node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black11"]
-modulate = Color(0.22, 0.0704, 0.0704, 1)
-texture_filter = 1
-position = Vector2(-3, 40)
-scale = Vector2(13.75, 13.9375)
-texture = ExtResource("2_21xmu")
-
-[node name="black12" type="CharacterBody2D" parent="grid"]
-position = Vector2(396, 443)
-scale = Vector2(1, 1.0369166)
-slide_on_ceiling = false
-safe_margin = 1.0
-script = ExtResource("1_r6vdu")
-step = 32
-object_color = Color(0.8976032, 0, 0.05446416, 1)
-
-[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black12"]
 modulate = Color(0.22, 0.0704, 0.0704, 1)
 texture_filter = 1
 position = Vector2(-3, 40)
@@ -332,22 +293,6 @@ position = Vector2(-3, 40)
 scale = Vector2(13.75, 13.9375)
 texture = ExtResource("2_21xmu")
 
-[node name="black18" type="CharacterBody2D" parent="grid"]
-position = Vector2(454, 443)
-scale = Vector2(1, 1.0369166)
-slide_on_ceiling = false
-safe_margin = 1.0
-script = ExtResource("1_r6vdu")
-step = 32
-object_color = Color(0.8976032, 0, 0.05446416, 1)
-
-[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black18"]
-modulate = Color(0.22, 0.0704, 0.0704, 1)
-texture_filter = 1
-position = Vector2(-3, 40)
-scale = Vector2(13.75, 13.9375)
-texture = ExtResource("2_21xmu")
-
 [node name="black19" type="CharacterBody2D" parent="grid"]
 position = Vector2(512, 133)
 scale = Vector2(1, 1.0369166)
@@ -422,22 +367,6 @@ step = 32
 object_color = Color(0.8976032, 0, 0.05446416, 1)
 
 [node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black23"]
-modulate = Color(0.22, 0.0704, 0.0704, 1)
-texture_filter = 1
-position = Vector2(-3, 40)
-scale = Vector2(13.75, 13.9375)
-texture = ExtResource("2_21xmu")
-
-[node name="black24" type="CharacterBody2D" parent="grid"]
-position = Vector2(512, 443)
-scale = Vector2(1, 1.0369166)
-slide_on_ceiling = false
-safe_margin = 1.0
-script = ExtResource("1_r6vdu")
-step = 32
-object_color = Color(0.8976032, 0, 0.05446416, 1)
-
-[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black24"]
 modulate = Color(0.22, 0.0704, 0.0704, 1)
 texture_filter = 1
 position = Vector2(-3, 40)
@@ -524,22 +453,6 @@ position = Vector2(-3, 40)
 scale = Vector2(13.75, 13.9375)
 texture = ExtResource("2_21xmu")
 
-[node name="black30" type="CharacterBody2D" parent="grid"]
-position = Vector2(570, 443)
-scale = Vector2(1, 1.0369166)
-slide_on_ceiling = false
-safe_margin = 1.0
-script = ExtResource("1_r6vdu")
-step = 32
-object_color = Color(0.8976032, 0, 0.05446416, 1)
-
-[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black30"]
-modulate = Color(0.22, 0.0704, 0.0704, 1)
-texture_filter = 1
-position = Vector2(-3, 40)
-scale = Vector2(13.75, 13.9375)
-texture = ExtResource("2_21xmu")
-
 [node name="black31" type="CharacterBody2D" parent="grid"]
 position = Vector2(629, 133)
 scale = Vector2(1, 1.0369166)
@@ -620,22 +533,6 @@ position = Vector2(-3, 40)
 scale = Vector2(13.75, 13.9375)
 texture = ExtResource("2_21xmu")
 
-[node name="black36" type="CharacterBody2D" parent="grid"]
-position = Vector2(629, 443)
-scale = Vector2(1, 1.0369166)
-slide_on_ceiling = false
-safe_margin = 1.0
-script = ExtResource("1_r6vdu")
-step = 32
-object_color = Color(0.8976032, 0, 0.05446416, 1)
-
-[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black36"]
-modulate = Color(0.22, 0.0704, 0.0704, 1)
-texture_filter = 1
-position = Vector2(-3, 40)
-scale = Vector2(13.75, 13.9375)
-texture = ExtResource("2_21xmu")
-
 [node name="black37" type="CharacterBody2D" parent="grid"]
 position = Vector2(688, 257)
 scale = Vector2(1, 1.0369166)
@@ -652,9 +549,105 @@ position = Vector2(-3, 40)
 scale = Vector2(13.75, 13.9375)
 texture = ExtResource("2_21xmu")
 
+[node name="black36" type="CharacterBody2D" parent="grid"]
+position = Vector2(689, 133)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black36"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_21xmu")
+
+[node name="black38" type="CharacterBody2D" parent="grid"]
+position = Vector2(689, 194.99998)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black38"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_21xmu")
+
+[node name="black39" type="CharacterBody2D" parent="grid"]
+position = Vector2(689, 257)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black39"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_21xmu")
+
+[node name="black40" type="CharacterBody2D" parent="grid"]
+position = Vector2(689, 319)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black40"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_21xmu")
+
+[node name="black41" type="CharacterBody2D" parent="grid"]
+position = Vector2(689, 381)
+scale = Vector2(1, 1.0369166)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 32
+object_color = Color(0.8976032, 0, 0.05446416, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black41"]
+modulate = Color(0.22, 0.0704, 0.0704, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_21xmu")
+
+[node name="black42" type="CharacterBody2D" parent="grid"]
+position = Vector2(746, 136.99998)
+scale = Vector2(1, 1.1166714)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 32
+object_color = Color(0.938547, 0.7513044, 0.42891955, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="grid/black42"]
+modulate = Color(0.30588236, 0.84313726, 0.9490196, 1)
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("2_21xmu")
+
 [node name="green" type="CharacterBody2D" parent="."]
-position = Vector2(514, 196.00002)
-scale = Vector2(1, 1.0769154)
+position = Vector2(634, 221.00002)
+scale = Vector2(1, 1.4369142)
 slide_on_ceiling = false
 safe_margin = 1.0
 script = ExtResource("1_r6vdu")
@@ -670,10 +663,10 @@ texture = ExtResource("3_8i3m3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="green"]
 position = Vector2(24, 11.544998)
-shape = SubResource("RectangleShape2D_r8rrl")
+shape = SubResource("RectangleShape2D_hr07a")
 
 [node name="red" type="CharacterBody2D" parent="."]
-position = Vector2(402, 258)
+position = Vector2(462, 135)
 scale = Vector2(1, 1.0769154)
 slide_on_ceiling = false
 safe_margin = 1.0
@@ -690,10 +683,10 @@ texture = ExtResource("4_rmy57")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="red"]
 modulate = Color(0.67, 0.080400005, 0.080400005, 1)
 position = Vector2(49.5, 11.143021)
-shape = SubResource("RectangleShape2D_lwvnx")
+shape = SubResource("RectangleShape2D_m5boc")
 
 [node name="green2" type="CharacterBody2D" parent="."]
-position = Vector2(341, 382)
+position = Vector2(342, 196.00002)
 scale = Vector2(1, 1.0769154)
 slide_on_ceiling = false
 safe_margin = 1.0
@@ -710,9 +703,10 @@ texture = ExtResource("3_8i3m3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="green2"]
 position = Vector2(24, 11.544998)
-shape = SubResource("RectangleShape2D_r8rrl")
+shape = SubResource("RectangleShape2D_hr07a")
 
 [node name="green3" type="CharacterBody2D" parent="."]
+visible = false
 position = Vector2(340, 196.00002)
 scale = Vector2(1, 1.0769154)
 slide_on_ceiling = false
@@ -731,30 +725,10 @@ texture = ExtResource("4_rmy57")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="green3"]
 position = Vector2(25, 40.393173)
-shape = SubResource("RectangleShape2D_4ou0f")
-
-[node name="yellow" type="CharacterBody2D" parent="."]
-position = Vector2(347, 136)
-scale = Vector2(1, 1.0769154)
-slide_on_ceiling = false
-safe_margin = 1.0
-script = ExtResource("1_r6vdu")
-step = 58
-object_color = Color(1, 0.8901961, 0.050980393, 1)
-
-[node name="Untitled15820260106220544" type="Sprite2D" parent="yellow"]
-texture_filter = 1
-position = Vector2(49.999996, 39.000267)
-scale = Vector2(13.75, 13.9375)
-texture = ExtResource("5_qulpo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="yellow"]
-modulate = Color(0.67, 0.080400005, 0.080400005, 1)
-position = Vector2(77.5, 11.6072235)
-shape = SubResource("RectangleShape2D_4k5bj")
+shape = SubResource("RectangleShape2D_3gnjk")
 
 [node name="yellow2" type="CharacterBody2D" parent="."]
-position = Vector2(403, 443)
+position = Vector2(347, 381.00003)
 scale = Vector2(1, 1.0769154)
 slide_on_ceiling = false
 safe_margin = 1.0
@@ -771,4 +745,124 @@ texture = ExtResource("5_qulpo")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="yellow2"]
 modulate = Color(0.67, 0.080400005, 0.080400005, 1)
 position = Vector2(77.5, 11.6072235)
-shape = SubResource("RectangleShape2D_4k5bj")
+shape = SubResource("RectangleShape2D_xjpae")
+
+[node name="green4" type="CharacterBody2D" parent="."]
+position = Vector2(574, 221)
+scale = Vector2(1, 1.4369142)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 62
+move_axis = "Vertical"
+object_color = Color(0, 0.9019608, 0.13333334, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="green4"]
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("3_8i3m3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="green4"]
+position = Vector2(24, 11.544998)
+shape = SubResource("RectangleShape2D_hr07a")
+
+[node name="green5" type="CharacterBody2D" parent="."]
+position = Vector2(515, 319.00003)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 62
+move_axis = "Vertical"
+object_color = Color(0, 0.9019608, 0.13333334, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="green5"]
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("3_8i3m3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="green5"]
+position = Vector2(24, 11.544998)
+shape = SubResource("RectangleShape2D_hr07a")
+
+[node name="green6" type="CharacterBody2D" parent="."]
+position = Vector2(283, 284)
+scale = Vector2(1, 1.4369142)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 62
+move_axis = "Vertical"
+object_color = Color(0, 0.9019608, 0.13333334, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="green6"]
+texture_filter = 1
+position = Vector2(-3, 40)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("3_8i3m3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="green6"]
+position = Vector2(24, 11.544998)
+shape = SubResource("RectangleShape2D_hr07a")
+
+[node name="yellow3" type="CharacterBody2D" parent="."]
+position = Vector2(347, 319)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 58
+object_color = Color(1, 0.8901961, 0.050980393, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="yellow3"]
+texture_filter = 1
+position = Vector2(49.999996, 39.000267)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("5_qulpo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="yellow3"]
+modulate = Color(0.67, 0.080400005, 0.080400005, 1)
+position = Vector2(77.5, 11.6072235)
+shape = SubResource("RectangleShape2D_xjpae")
+
+[node name="yellow" type="CharacterBody2D" parent="."]
+position = Vector2(462, 197.00002)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 58
+object_color = Color(1, 0.8901961, 0.050980393, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="yellow"]
+texture_filter = 1
+position = Vector2(49.999996, 39.000267)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("4_rmy57")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="yellow"]
+modulate = Color(0.67, 0.080400005, 0.080400005, 1)
+position = Vector2(49.5, 11.143021)
+shape = SubResource("RectangleShape2D_m5boc")
+
+[node name="yellow4" type="CharacterBody2D" parent="."]
+position = Vector2(578, 382)
+scale = Vector2(1, 1.0769154)
+slide_on_ceiling = false
+safe_margin = 1.0
+script = ExtResource("1_r6vdu")
+step = 58
+object_color = Color(1, 0.8901961, 0.050980393, 1)
+
+[node name="Untitled15820260106220544" type="Sprite2D" parent="yellow4"]
+texture_filter = 1
+position = Vector2(49.999996, 39.000267)
+scale = Vector2(13.75, 13.9375)
+texture = ExtResource("4_rmy57")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="yellow4"]
+modulate = Color(0.67, 0.080400005, 0.080400005, 1)
+position = Vector2(49.5, 11.143021)
+shape = SubResource("RectangleShape2D_m5boc")

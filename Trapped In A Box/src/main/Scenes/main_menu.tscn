@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cm0hldn3765e6"]
 
-[ext_resource type="Script" uid="uid://bl3vkt5j06u3o" path="res://main_menu.gd" id="1_06t4h"]
-[ext_resource type="PackedScene" uid="uid://c2mvma04881jf" path="res://option_panel.tscn" id="2_7vrkn"]
+[ext_resource type="Script" uid="uid://bl3vkt5j06u3o" path="res://Scripts/main_menu.gd" id="1_48xlc"]
+[ext_resource type="PackedScene" uid="uid://c2mvma04881jf" path="res://Scenes/option_panel.tscn" id="2_1ehe0"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_06t4h")
+script = ExtResource("1_48xlc")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -61,7 +61,7 @@ size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 text = "Quit"
 
-[node name="OptionPanel" parent="." instance=ExtResource("2_7vrkn")]
+[node name="OptionPanel" parent="." instance=ExtResource("2_1ehe0")]
 visible = false
 layout_mode = 1
 anchors_preset = 15
