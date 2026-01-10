@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://2s0tasgk6j7h"]
+[gd_scene load_steps=3 format=3 uid="uid://2s0tasgk6j7h"]
 
 [ext_resource type="Script" uid="uid://yelo4cpjarqy" path="res://level_select.gd" id="1_il3u1"]
+[ext_resource type="Texture2D" uid="uid://0ajiucihixtp" path="res://blocks/lock.png" id="2_vomi7"]
 
 [node name="LevelSelect" type="Control"]
 layout_mode = 3
@@ -11,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_il3u1")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="background" type="ColorRect" parent="."]
 layout_mode = 0
 offset_right = 1154.0
 offset_bottom = 652.0
@@ -28,6 +29,7 @@ theme_override_font_sizes/font_size = 30
 text = "Back"
 
 [node name="Label" type="Label" parent="."]
+texture_filter = 1
 layout_mode = 0
 offset_left = 426.0
 offset_top = 119.0
@@ -37,6 +39,7 @@ scale = Vector2(3, 3)
 text = "Level Selection"
 
 [node name="Button1" type="Button" parent="."]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 97.0
 offset_top = 274.0
@@ -45,25 +48,8 @@ offset_bottom = 318.0
 scale = Vector2(4.2, 4.2)
 text = "1"
 
-[node name="Button4" type="Button" parent="."]
-layout_mode = 0
-offset_left = 881.0001
-offset_top = 276.0
-offset_right = 924.0001
-offset_bottom = 320.0
-scale = Vector2(4.2, 4.2)
-text = "4"
-
-[node name="Button3" type="Button" parent="."]
-layout_mode = 0
-offset_left = 619.00006
-offset_top = 278.0
-offset_right = 662.00006
-offset_bottom = 322.0
-scale = Vector2(4.2, 4.2)
-text = "3"
-
 [node name="Button2" type="Button" parent="."]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 351.00003
 offset_top = 276.0
@@ -72,5 +58,40 @@ offset_bottom = 320.0
 scale = Vector2(4.2, 4.2)
 text = "2
 "
+
+[node name="Button3" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 619.00006
+offset_top = 278.0
+offset_right = 662.00006
+offset_bottom = 322.0
+scale = Vector2(4.2, 4.2)
+text = "3"
+
+[node name="Button4" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 881.0001
+offset_top = 276.0
+offset_right = 924.0001
+offset_bottom = 320.0
+scale = Vector2(4.2, 4.2)
+text = "4"
+
+[node name="Lock" type="Sprite2D" parent="."]
+position = Vector2(438, 354)
+scale = Vector2(0.6461111, 0.6141666)
+texture = ExtResource("2_vomi7")
+
+[node name="Lock2" type="Sprite2D" parent="."]
+position = Vector2(975, 355.00003)
+scale = Vector2(0.6461111, 0.6141666)
+texture = ExtResource("2_vomi7")
+
+[node name="Lock3" type="Sprite2D" parent="."]
+position = Vector2(710.00006, 356.00003)
+scale = Vector2(0.6461111, 0.6141666)
+texture = ExtResource("2_vomi7")
 
 [connection signal="button_up" from="BackButton" to="." method="back"]
