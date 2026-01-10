@@ -1,22 +1,66 @@
 extends CharacterBody2D
 
-const TILE_SIZE: Vector2 = Vector2(16, 16)
-var sprite_node_pos_tween: Tween
+@export var step := 16
+@export var speed: float = 300.0
+@export_enum("Horizontal", "Vertical") var move_axis := "Horizontal"
 
+static var active_node: CharacterBody2D = null
 
-func _physics_process(delta: float) -> void:
-	if Input.is_action_just_pressed("ui_up") and !$up.is_colliding():
-		_move(Vector2(0, -1))
+var target_pos: Vector2
+var moving := false
+var is_active := false
 
-	elif Input.is_action_just_pressed("ui_down") and !$down.is_colliding():
-		_move(Vector2(0, 1))
+func _ready():
+	target_pos = global_position
+	input_pickable = true
 
-	elif Input.is_action_just_pressed("ui_left") and !$left.is_colliding():
-		_move(Vector2(-1, 0))
+func _input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		set_active()
 
-	elif Input.is_action_just_pressed("ui_right") and !$right.is_colliding():
-		_move(Vector2(1, 0))
+func set_active():
+	if active_node and active_node != self:
+		active_node.is_active = false
 
+	active_node = self
+	is_active = true
 
-func _move(dir: Vector2) -> void:
-	global_position += dir * TILE_SIZE
+func _physics_process(delta):
+	if not is_active:
+		velocity = Vector2.ZERO
+		return
+
+	if not moving:
+		var dir := get_input_dir()
+		if dir != Vector2.ZERO:
+			try_move(dir)
+	else:
+		var to_target: Vector2 = target_pos - global_position
+		var step_move: float = speed * delta
+
+		if to_target.length() <= step_move:
+			global_position = target_pos
+			velocity = Vector2.ZERO
+			moving = false
+		else:
+			velocity = to_target.normalized() * speed
+			move_and_slide()
+
+func get_input_dir() -> Vector2:
+	if move_axis == "Horizontal":
+		if Input.is_action_just_pressed("ui_right"):
+			return Vector2.RIGHT
+		if Input.is_action_just_pressed("ui_left"):
+			return Vector2.LEFT
+	else:
+		if Input.is_action_just_pressed("ui_down"):
+			return Vector2.DOWN
+		if Input.is_action_just_pressed("ui_up"):
+			return Vector2.UP
+	return Vector2.ZERO
+
+func try_move(dir: Vector2):
+	var motion := dir * step
+	if not test_move(global_transform, motion):
+		target_pos = global_position + motion
+		moving = true
