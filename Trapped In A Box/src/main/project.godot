@@ -19,6 +19,9 @@ config/icon="res://Assets/icon.svg"
 
 LevelCore="*res://LevelCore.gd"
 
+[autoload]
+
+global="*res://global.gd"
 [dotnet]
 
 project/assembly_name="Trapped in a Box"

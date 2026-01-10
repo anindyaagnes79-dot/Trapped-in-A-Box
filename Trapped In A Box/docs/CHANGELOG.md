@@ -13,3 +13,11 @@
     1. Add main menu level select and option script
     2. Add quit, option, and start function
     3. Add back function for level select and option
+- feat: add level buttons
+    1. Add 1-5 level buttons
+    2. Connect the buttons to a function (function WIP)
+    3. Make a global script
+    4. Save choosen level to global script
+- refactor: save option tres for future use
+    1. Add tres file templating from option
+    2. Add basic winning panel

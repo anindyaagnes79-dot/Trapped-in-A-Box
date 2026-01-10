@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bv8ltqo3huxbw"]
+[gd_scene load_steps=3 format=3 uid="uid://bue3odn3oecin"]
 
-[ext_resource type="StyleBox" path="res://option_panel.tres" id="1_703hu"]
+[ext_resource type="StyleBox" uid="uid://crax4onlrn8wc" path="res://option_panel.tres" id="1_703hu"]
 [ext_resource type="Script" uid="uid://bxpfjoqwu3yh6" path="res://option_panel.gd" id="2_pguxx"]
 
 [node name="CreditPanel" type="Panel"]
