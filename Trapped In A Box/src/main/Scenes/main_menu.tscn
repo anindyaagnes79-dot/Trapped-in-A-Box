@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://f6m0r7b0hrdk"]
+[gd_scene load_steps=4 format=3 uid="uid://cm0hldn3765e6"]
 
-[ext_resource type="Script" path="res://main_menu.gd" id="1_06t4h"]
-[ext_resource type="PackedScene" uid="uid://d20u0mdmeh7ja" path="res://option_panel.tscn" id="2_7vrkn"]
+[ext_resource type="Script" uid="uid://bl3vkt5j06u3o" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="PackedScene" uid="uid://c2mvma04881jf" path="res://option_panel.tscn" id="2_7vrkn"]
+[ext_resource type="PackedScene" uid="uid://bue3odn3oecin" path="res://credit_panel.tscn" id="3_fu7sn"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -10,7 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_06t4h")
+script = ExtResource("1_48xlc")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -55,13 +56,19 @@ size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 text = "Option"
 
+[node name="CreditButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "Credit"
+
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 text = "Quit"
 
-[node name="OptionPanel" parent="." instance=ExtResource("2_7vrkn")]
+[node name="OptionPanel" parent="." instance=ExtResource("2_1ehe0")]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -74,6 +81,10 @@ offset_top = 0.0
 offset_right = -287.0
 offset_bottom = 0.0
 
+[node name="CreditPanel" parent="." instance=ExtResource("3_fu7sn")]
+layout_mode = 1
+
 [connection signal="button_up" from="VBoxContainer/StartButton" to="." method="start"]
 [connection signal="button_up" from="VBoxContainer/OptionButton" to="." method="option"]
+[connection signal="button_up" from="VBoxContainer/CreditButton" to="." method="credit"]
 [connection signal="button_up" from="VBoxContainer/QuitButton" to="." method="quit"]
